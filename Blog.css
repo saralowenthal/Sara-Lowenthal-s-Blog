@@ -110,6 +110,19 @@ h3 {
     line-height: var(--line-height);
 }
 
+ul {
+    list-style-type:square;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: var(--line-height);
+}
+
+ol {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: var(--line-height);
+}
+
 img {
     display: block;
     margin: var(--spacing) auto;
@@ -155,19 +168,6 @@ input[type="submit"]:hover {
 
 input[type="submit"]:active {
     background-color: rgb(180, 20, 40);
-}
-
-ul {
-    list-style-type:square;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    line-height: var(--line-height);
-}
-
-ol {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    line-height: var(--line-height);
 }
 
 footer {
