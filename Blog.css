@@ -1,0 +1,194 @@
+/* Sara Lowenthal 2/12/25 */
+
+:root {
+    --primary-font: 'Arial', 'Helvetica', sans-serif;
+    --primary-color: #333;
+    --secondary-color: rgb(220, 53, 69);
+    --line-height: 2;
+    --background: #f4f4f4;
+    --spacing: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+    line-height: 1.7;
+    max-width: 90%;
+    background-color: var(--background);
+    border-radius: 8px;
+    margin: 90px 50px 5px 270px;
+    list-style-position: inside;
+    padding: var(--spacing);
+    scroll-padding-top: 1000px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(248, 57, 80, 0.9);
+    color: white;
+    text-align: center;
+    padding: 3px var(--spacing);
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-bottom: 3px solid #cc0000;
+}
+
+header a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: var(--spacing);
+}
+
+.sidebar {
+    background-color: var(--background);
+    padding: var(--spacing);
+    border-radius: 8px;
+    width: 250px;
+    position: fixed;
+    top: 90px; 
+    left: 0;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar items */
+.sidebar ul {
+    padding-left: 15px;
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar a:hover {
+    color: var(--secondary-color);
+    background-color: #ddd;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+h1 {
+    font-size: 28px;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 2.5;
+    padding-top: 50px;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: var(--line-height);
+}
+
+img {
+    display: block;
+    margin: var(--spacing) auto;
+    border-radius: 8px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 100%;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    outline: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:focus {
+    color: black;
+}
+
+form {
+    line-height: var(--line-height);
+}
+
+/* Button */
+input[type="submit"] {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(200, 30, 50);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"]:active {
+    background-color: rgb(180, 20, 40);
+}
+
+ul {
+    list-style-type:square;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: var(--line-height);
+}
+
+ol {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: var(--line-height);
+}
+
+footer {
+    text-align: center;
+    padding: var(--spacing);
+    background-color: #333;
+    color: rgba(248, 57, 80, 0.9);
+    margin-top: var(--spacing);
+    border-radius: 4px;
+}
+
+footer a {
+    color: rgba(248, 57, 80, 0.9);
+}
+
+.about-us-body {
+    margin: 20px 50px 5px 20px;
+}
+
+.header nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
