@@ -159,6 +159,10 @@ input[type="submit"] {
     font-size: 16px;
     cursor: pointer;
     border-radius: 4px;
+    transition-property: background-color;
+    transition-duration: 7s;
+    transition-timing-function: linear;
+    transition-delay: 3s;
 }
 
 input[type="submit"]:hover {
